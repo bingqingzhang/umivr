@@ -1,0 +1,43 @@
+{
+    "test_dataset_config": {
+        "dataset_name": "MSVD-1k-test",
+        "video_path": "dataset/msvd/videos",
+        "video_fmt": "avi",
+        "dataset_anno_path": "anno/msvd/msvd_test.jsonl",
+        "anno_file_format": "jsonl",
+        "using_llava_preprocess": true,
+        "video_preprocess": {
+            "sample_num_frame": 8,
+            "sample_strategy": "iqa"
+        },
+        "video_batch_size": 4,
+        "video_num_workers": 8,
+        "text_batch_size": 1,
+        "text_num_workers": 2,
+        "iqa_config": {
+            "using_cache": true,
+            "file_path": "cache_dir/msvd-iqa.json",
+            "num_frame": 8
+        }
+    },
+    "model_config":{
+        "model_name": "LanguageBind/Video-LLaVA-7B",
+        "cache_dir": "./cache_dir/",
+        "load_4bit": true,
+        "load_8bit": false,
+        "conv_mode": "llava_v1"
+    },
+    "dialogue_config": {
+        "dialogue_type": "ua_multiturn",
+        "total_turn": 10,
+        "num_segments": 2,
+        "use_caption": true,
+        "use_caption_cache": false,
+        "metadata_file": "cache_dir/msvd_video_metadata.json",
+        "embedding_file": "cache_dir/msvd_text_embeddings.pt",
+        "text_corpus_file": "cache_dir/msvd_text_corpus.json",
+        "text_uncertainty_threshold": 0.5,
+        "jsd_threshold": 0.2
+    }      
+   
+}
