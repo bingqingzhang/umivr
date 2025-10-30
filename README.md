@@ -61,11 +61,13 @@ To run other baseline methods, simply change the `--config-file` argument to use
 If you find our work useful in your research, please consider citing our paper:
 
 ```bibtex
-@inproceedings{zhang2025umivr,
- title={Quantifying and Narrowing the Unknown: Interactive Text-to-Video Retrieval via Uncertainty Minimization},
- author={Zhang, Bingqing and Cao, Zhuo and Du, Heming and Li, Yang and Li, Xue and Liu, Jiajun and Wang, Sen},
- booktitle={ICCV2025},
- year={2025}
+@InProceedings{Zhang_2025_ICCV,
+    author    = {Zhang, Bingqing and Cao, Zhuo and Du, Heming and Li, Yang and Li, Xue and Liu, Jiajun and Wang, Sen},
+    title     = {Quantifying and Narrowing the Unknown: Interactive Text-to-Video Retrieval via Uncertainty Minimization},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {22120-22130}
 }
 ```
 
